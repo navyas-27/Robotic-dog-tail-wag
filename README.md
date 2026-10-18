@@ -3,17 +3,12 @@ A simulated robot dog built on an ESP32 in the Wokwi online simulator. A servo m
 
 Wokwi project:https://wokwi.com/projects/478123078237746177
 
-How it behaves
-Distance from the "nose"	Dog's reaction
-
+# How it behaves
+Distance from the "nose"	Dog's reaction\n
 Over 50 cm	Slow, lazy wag
-
 10 to 50 cm	Fast, happy wag
-
 Under 10 cm	Tail stops and the red LED turns on (the dog is startled)
-
 Button pressed (bonus)	Dog "sits": tail freezes in the middle for 3 seconds
-
 The measured distance (in cm) is printed to the Serial Monitor about five times per second.
 
 Components
