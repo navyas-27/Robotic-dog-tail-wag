@@ -4,27 +4,27 @@ A simulated robot dog built on an ESP32 in the Wokwi online simulator. A servo m
 Wokwi project:https://wokwi.com/projects/478123078237746177
 
 ### How it behaves
-Distance from the "nose"	Dog's reaction\n
-Over 50 cm	Slow, lazy wag\n
-10 to 50 cm	Fast, happy wag\n
-Under 10 cm	Tail stops and the red LED turns on (the dog is startled)\n
-Button pressed (bonus)	Dog "sits": tail freezes in the middle for 3 seconds\n
+Distance from the "nose"	Dog's reaction  
+Over 50 cm	Slow, lazy wag  
+10 to 50 cm	Fast, happy wag  
+Under 10 cm	Tail stops and the red LED turns on (the dog is startled)  
+Button pressed (bonus)	Dog "sits": tail freezes in the middle for 3 seconds  
 The measured distance (in cm) is printed to the Serial Monitor about five times per second.
 
 ### Components
-ESP32 development board
-Micro servo (the tail)
-HC-SR04 ultrasonic distance sensor (the nose)
-Red LED with a 220 ohm resistor (the startled light)
-Push button (the "sit" command)
-Wiring
-Part	ESP32 pin
-HC-SR04 TRIG	GPIO 5
-HC-SR04 ECHO	GPIO 18
-Servo signal (PWM)	GPIO 13
-LED (through 220 ohm resistor)	GPIO 26
-Push button (other leg to GND)	GPIO 27
-Power pins (VCC/V+) and GND connect to the matching rails on the ESP32.
+ESP32 development board  
+Micro servo (the tail)  
+HC-SR04 ultrasonic distance sensor (the nose)  
+Red LED with a 220 ohm resistor (the startled light)  
+Push button (the "sit" command)  
+Wiring  
+Part	ESP32 pin  
+HC-SR04 TRIG	GPIO 5  
+HC-SR04 ECHO	GPIO 18  
+Servo signal (PWM)	GPIO 13  
+LED (through 220 ohm resistor)	GPIO 26  
+Push button (other leg to GND)	GPIO 27  
+Power pins (VCC/V+) and GND connect to the matching rails on the ESP32.  
 
 ### How it works
 
@@ -38,9 +38,9 @@ Power pins (VCC/V+) and GND connect to the matching rails on the ESP32.
 
 ### Files
 
-sketch.ino: the program
-diagram.json: the circuit wiring for Wokwi
-libraries.txt: the ESP32Servo library
+sketch.ino: the program  
+diagram.json: the circuit wiring for Wokwi  
+libraries.txt: the ESP32Servo library  
 
 Run it
 
